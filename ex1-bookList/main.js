@@ -27,9 +27,13 @@ const h1 = document.createElement('h1');
 //Add content to h1
 h1.textContent= "The Book List";
 
-//Style the created elements
-h1.style.fontSize = '25px';
+//Style ul and h1 elements
+h1.style.fontSize = '30px';
+h1.style.margin = '20px';
 h1.style.color = 'green';
+h1.style.textAlign= 'center';
+bookList.style.display='flex';
+bookList.style.flex='flex-wrap';
 
 //Add to the DOM
 document.body.appendChild(h1);
@@ -41,7 +45,8 @@ for (let i = 0; i < myBooks.length; i++) {
   //Create the li 
   const bookListItems = document.createElement('li');
   bookListItems.style.listStyle ="none";
-  //bookListItems.style.width = "400px";
+  bookListItems.style.padding='20px';
+  bookListItems.style.margin='12px';
   bookList.appendChild(bookListItems);
 
   //Create p element
@@ -50,7 +55,7 @@ for (let i = 0; i < myBooks.length; i++) {
   bookDescription.style.fontSize= "20px";
   bookListItems.appendChild(bookDescription);
 
-  //Create img element added new property to the object
+  //Create img element 
   const image = document.createElement("img");
   image[i] = new Image();
   image[i].src = 'image' + i + '.jfif';
