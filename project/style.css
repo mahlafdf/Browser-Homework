@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: orange;
+
+}
+
+/*.child-container{
+    position: relative;
+}
+.main-container{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}*/
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30vh 12vw ;
+    padding: 10%;
+    background-color: aliceblue;
+}
+
+.child-container{
+    padding: 20px;
+}
+
+h1{
+    color: orange;
+}
+
+button{
+    font-size: larger;
+    background-color: orange;
+    color: aliceblue;
+    border:  none;
+    padding: 15%;
+}
