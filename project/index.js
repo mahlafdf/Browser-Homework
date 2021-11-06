@@ -1,23 +1,42 @@
-const mainText = document.querySelector('h1');
-const btn = document.getElementById('main-btn');
-
 const quoteArr =[
-    "You only live once, but if you do it right, once is enough.",
-    "Be the change that you wish to see in the world.",
-    "If you tell the truth, you don't have to remember anything.",
-    "A friend is someone who knows all about you and still loves you.",
-    "Always forgive your enemies; nothing annoys them so much.",
-    "Without music, life would be a mistake.",
+    {
+        quote :"You never really learn much from hearing yourself speak.",
+        author: "George Clooney",
+    },
+    {
+        quote :"Live for each second without hesitation.",
+        author: "Elton John", 
+    },
+    {
+        quote :"Life is like riding a bicycle. To keep your balance, you must keep moving.",
+        author: "Albert Einstein",
+    },
+    {
+        quote:"Life is really simple, but men insist on making it complicated.",
+        author: "Confucius" ,
+    },
+    {
+        quote: "Life is a succession of lessons which must be lived to be understood.",
+        author: "Helen Keller", 
+    },
+    {
+        quote:"My mama always said, life is like a box of chocolates. You never know what you’re gonna get.",
+        author: "Forrest Gump",
+    },
+    {
+        quote:"The healthiest response to life is joy.",
+        author: "Deepak Chopra",
+    },
 ] ;
-
-//Select a random quote
-//const randomQuote = quoteArr[Math.floor((Math.random()*quoteArr.length))];
-//   console.log(randomQuote);
-
   
+const mainText = document.querySelector('h1');
+const author = document.getElementById('author');
+const btn = document.getElementById('main-btn');
 
 
 btn.addEventListener("click",function(){
-    const randomQuote = quoteArr[Math.floor((Math.random()*quoteArr.length))];
-    mainText.innerText = randomQuote ;
+    const randomIndex  = Math.floor((Math.random()*quoteArr.length));
+    mainText.innerText = quoteArr[randomIndex].quote;
+    author.innerText = quoteArr[randomIndex].author;
+
 });

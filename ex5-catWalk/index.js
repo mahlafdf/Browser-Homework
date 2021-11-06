@@ -27,3 +27,11 @@ const walking = setInterval(catWalk, 50);
 
 };
 main();
+
+
+// const walking = setInterval(function(){
+//     let position = 0;
+//     position +=10 ;
+//     catImage.style.left =`${position}px`;
+//     
+// }, 50);

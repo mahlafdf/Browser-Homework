@@ -9,22 +9,12 @@ body{
 
 }
 
-/*.child-container{
-    position: relative;
-}
 .main-container{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-}*/
-
-.main-container{
-    display: flex;
+   /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  flex made the btn change */
     margin: 30vh 12vw ;
-    padding: 10%;
+    padding: 10px 20px;
     background-color: aliceblue;
 }
 
@@ -34,12 +24,16 @@ body{
 
 h1{
     color: orange;
+    text-align:center ;  
 }
-
+h3{
+    color: orange;
+    text-align: right ;  
+}
 button{
-    font-size: larger;
+    font-size: 20px;
     background-color: orange;
     color: aliceblue;
     border:  none;
-    padding: 15%;
+    padding: 15px;
 }
